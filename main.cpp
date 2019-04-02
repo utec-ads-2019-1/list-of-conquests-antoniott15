@@ -15,26 +15,26 @@ int main()
 
 void NumberLines(int nLines)
 {
-    vector<string> Country, Girl;
-    string ccountry, cgirl;
+    vector<string> Country, Girl2;
+    string ccountry, cgirl, cgirl2;
     for (int i = 0; i < nLines; i++)
     {
         cout << "nombre apellido : \n";
-        cin >> ccountry >> cgirl;
+        cin >> ccountry >> cgirl >> cgirl2;
         Country.push_back(ccountry);
-        Girl.push_back(cgirl);
+        Girl2.push_back(cgirl2);
         int Csize = Country.size(), CCount = 1;
-        cgirl, ccountry = Girl[0], Country[0];
+        cgirl2, ccountry = Girl2[0], Country[0];
         for (int i = 0; i < Csize; i++)
         {
             if (ccountry != Country[i])
             {
-                if (cgirl != Girl[i])
+                if (cgirl2 != Girl2[i])
                 {
                     cout << ccountry << " " << CCount << "\n";
                     CCount = 0;
                     ccountry = Country[i];
-                    cgirl = Girl[i];
+                    cgirl2 = Girl2[i];
                 }
             }
             CCount++;
